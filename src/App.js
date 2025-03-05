@@ -8,10 +8,10 @@ function App() {
     []
   );
   const [n, setN] = useState(1000);
-  const [epsilon, setEpsilon] = useState(0.1);
+  const [epsilon, setEpsilon] = useState(1);
   const [runs, setRuns] = useState(1000);
   const [ratio, setRatio] = useState(0.9);
-  const [bins, setBins] = useState(10);
+  const [bins, setBins] = useState(25);
 
   const handleGenerate = () => {
     let dataURL = run(n, runs, ratio, epsilon);
